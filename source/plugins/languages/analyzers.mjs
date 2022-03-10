@@ -43,7 +43,7 @@ export async function indepth({login, data, imports, repositories}, {skipped, ca
       finally {
         //Cleaning
         console.debug(`metrics/compute/${login}/plugins > languages > indepth > cleaning temp dir ${path}`)
-        await imports.fs.rm(path, {recursive:true, force:true})
+        //await imports.fs.rm(path, {recursive:true, force:true})
       }
     }
     solve(results)
@@ -146,7 +146,7 @@ export async function recent({login, data, imports, rest, account}, {skipped = [
     finally {
       //Cleaning
       console.debug(`metrics/compute/${login}/plugins > languages > cleaning temp dir ${path}`)
-      await imports.fs.rm(path, {recursive:true, force:true})
+      //await imports.fs.rm(path, {recursive:true, force:true})
     }
     solve(results)
   })
